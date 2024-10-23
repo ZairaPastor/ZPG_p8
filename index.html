@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_flexbox</title>
+    <style>
+        *¨{
+            margin: 0;
+            padding: 0;
+        }
+        #caixa{
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(173, 203, 208);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .quadrat{
+            z-index: 2;
+            width: 20vw;
+            height: 20vw;
+            background-color: rgb(135, 100, 167);
+            
+        }
+        .cercle{
+            z-index: 3;
+            width: 20vw;
+            height: 20vw;
+            border-radius: 20vw;
+            background-color: rgb(17, 141, 141);
+        }
+        .rect{
+            z-index: 4;
+            width: 20vw;
+            height: 100vh;
+            background-color: rgb(86, 105, 156);
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+       <div class="rect"></div>
+       <div class="cercle"></div>
+       <div class="quadrat"></div>
+    </div>
+</body>
+</html>
